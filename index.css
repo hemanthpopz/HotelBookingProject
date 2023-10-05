@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.main-container {
+
+    background-color: #222222;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.moon-icon {
+    display: none;
+
+}
+
+.sun-icon {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.navbar svg {
+    cursor: pointer;
+}
+
+.login-btn {
+    background: #FF7665;
+    border-radius: 25px;
+    padding: 12px 50px 12px 50px;
+    border-width: 0px;
+    color: white;
+    font-family: Open Sans;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.login-btn:hover {
+    background-color: transparent;
+
+    cursor: pointer;
+    color: #FF7665;
+
+}
+
+.first-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.logo-text-container {
+    margin-top: 30px;
+}
+
+.main-heading {
+    color: black;
+    font-family: Poppins;
+    font-size: 40px;
+    max-width: 300px;
+}
+
+.description {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.video-text {
+    color: black;
+    font-family: Open Sans;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.video-text:hover {
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    background-image: url('https://s3-alpha-sig.figma.com/img/e4a8/f302/6a912ef0315ac2a3cb0379dc9782f7eb?Expires=1697414400&Signature=kFdIooRhxbzTl~~ZjOYGLv4G6QaOTGCHWTk4mqXYknMaHOGtoD6RvmxGEKomUBndNFlur1b4L9wFlgm6vtfyIyHq9FgsMxbAgZ6RKK3c0M8KwLCcnhvC~coly0uVuuqTI2kTB~FuhPnvt8A537U~-o0Mz2~rc3RZFZjiJBKhz4YphM6LtA~y2hDbcdEqsr40gkgKWs9BFJYOz-4hJ6rRoD2veBEB7RbZvyDR1Ru60J68iVlc29te-pQxI0Lj2TS6syiFltcA4Zd1W-OeTQpKx3zFfNCRA4JeA4DlsNv5irS9sCsG16Sdb8mPeyP4mRcBaMrS4k8JfRCbi9JWTpLTAA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+
+}
+
+.main-hotel-image {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.rooms-heading {
+    font-family: Open Sans;
+    color: white;
+    margin: 60px 0px 40px 0px;
+}
+
+.view-btn {
+    background-color: #FF766566;
+    border-width: 0px;
+    font-family: Open Sans;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+
+}
+
+.view-btn:hover {
+    background-color: transparent;
+    color: #FF7665;
+}
+
+.button-container {
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.hotel-cart-image {
+    width: 350px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px
+}
+
+
+.cart-container {
+    background-color: white;
+    width: 350px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+}
+
+.cart-text {
+    font-size: 24px;
+    font-family: Open Sans;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.ul-class li {
+    margin: 0px 10px 20px 0px;
+    cursor: pointer;
+}
+
+.ul-class {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.star-container {
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.facility-heading {
+    color: white;
+    margin-bottom: 30px;
+    font-family: Open Sans;
+    font-weight: 300;
+    width: 390px;
+    font-size: 40px;
+}
+
+.facility-des {
+    color: white;
+    font-family: Open Sans;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.each-facility-text {
+    font-family: Open Sans;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.each-container {
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    margin: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.facility-container {
+    background-color: #3d3d3d;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 120px;
+}
+
+.contact-btn {
+    margin: 40px 0px 40px 0px;
+}
+
+.each-facility-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.swimmer-image {
+    height: 40px;
+    width: 40px;
+}
+
+.explore-image-container {
+    height: 500px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/8563/ecfc/0bec1155849fed9bf2dc78b7d0a77f0c?Expires=1697414400&Signature=eNdMMghSkqkySVeu37osauVy4RWPMyKOy~AT2ylOFoQyb3W4pPZgOuJBEfM1KWoA4AJncRoZVg3Ul7lktWOH4Un4lO3crX1bLky5JKGH7eeyGopwrsYTNdixjIasa4kYOvLFcWHOhvaSNFaKlmpzoTRzAitcXcdTyU0HFZkjeKre575BvdgAlFk9e-qiYsBevRw19AzDJppNsHT3tZ2U3WBAdlGpBha7wKvd-9XPwWxCuCKQIQORRiBGrUZ-PW2PL3lM5rB40YoYzZr0Wo8fUWX~xMkKj9Q-zeJCw5ICw0JuIvLqV6B8EDU2kXsqUbIdmrl53NGbWaaUgalspPbj7g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+    background-size: cover;
+    background-position: center;
+}
+
+.explore-heading {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.explore-des1,
+.explore-des2 {
+    color: #555;
+    margin-bottom: 20px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.explore-btn {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    padding: 10px 22px;
+    background-color: #FF7665;
+    border-width: 0px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+}
+
+.explore-btn:hover {
+    background-color: transparent;
+    color: black;
+
+
+
+}
+
+.explore-container {
+    border-radius: 16px;
+    background: #F4FBF8;
+    margin-bottom: 120px;
+}
+
+.explore-text-container {
+    padding: 10px;
+}
+
+.faq-heading {
+    color: white;
+    font-family: Open Sans;
+
+}
+
+.faq2-heading {
+    color: #FF7665;
+    font-family: Open Sans;
+}
+
+.faq-des {
+    font-family: Open Sans;
+    color: white;
+    font-size: 18px;
+}
+
+.question {
+    color: #0C1623;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.question-des {
+    color: rgba(29, 38, 58, 0.90);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.question-contianer {
+    background-color: white;
+    padding: 15px;
+    margin-top: 60px;
+
+}
+
+.answer1 {
+    background-color: white;
+    padding: 15px;
+    margin-top: 30px;
+
+}
+
+.FAQ-container {
+    background-color: #3d3d3d;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 120px;
+
+}
+
+.location-container {
+    height: 600px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/ea38/e476/01b01c2d6d8eb85c6087fccad0ae580b?Expires=1697414400&Signature=pIxX-t45UNVGbjtnvBeVHC7SScZJUFfZ1klm9zPCUeGCq4e5OJ5RawiwwIdXBYk6973HTGCTTpFkfCUGPCGf~WHmX-SFxHYX8pZ1IsnH~Z8b8B2oSUwj9a3K8qKiRKak0X8SYejzAhD8r4jTVKNehA7YwEeiV4uLDVfZHdyiCGv5gSGkVeHwkKMTPE~Yz2fsf8fhvrCIY~YYLjA4Y~ZdzQvzOQc6xUhU07y7ghKwTfeqmiFnwlzV07cxhwGpoQh4-WvvxJp1lg4tDibDq4Hubs7Xn8kJpsijDwLveyyCTrjFZC~qX~EJEaxwYtnoUJ-f1DGR~c4WkD-Qj7-uAl53Lw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: flex-end;
+    border-radius: 10px;
+    margin-bottom: 120px;
+}
+
+.visit-heading {
+    color: #222;
+    font-family: Open Sans;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.visit-des {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 18px;
+    width: 400px;
+}
+
+.visit-us-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+
+}
+
+input {
+    outline: none;
+    border-width: 0px;
+    background-color: transparent;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-btn {
+    border-width: 0px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgba(211, 101, 88, 0.80);
+    color: white;
+    transition: 0.5s;
+}
+
+.input-contact-btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.social-text {
+    color: white;
+    font-family: Open Sans;
+    font-size: 12px;
+}
+
+.first-li {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-ul {
+    list-style: none;
+
+}
+
+.footer-ul li {
+    color: white;
+    margin-bottom: 10px;
+    transition: 0.5s;
+
+}
+
+.footer-ul li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #FF7665;
+}
+
+.socia-media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socia-media-container svg {
+    margin-right: 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.socia-media-container svg:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .each-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .each-container svg {
+        width: 30px;
+    }
+
+    .each-facility-text {
+        font-size: 18px;
+    }
+
+    .facility-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .facility-text-container {
+        margin-right: 50px;
+    }
+
+    .facility-heading {
+
+        font-size: 30px;
+
+    }
+
+    .facility-des {
+        margin-bottom: 80px;
+    }
+
+    .facility-container {
+        padding: 50px;
+    }
+
+    .explore-text-container {
+        padding: 30px;
+    }
+
+    .explore-image-container {
+        height: 600px;
+    }
+
+    .faq-text-container {
+        margin-top: 50px;
+        margin-right: 40px;
+    }
+
+    .faq-des {
+        font-size: 22px;
+    }
+
+    .question-des {
+        font-size: 24px;
+    }
+
+    .social-text {
+        font-size: 24px;
+        width: 400px;
+    }
+
+    .first-li {
+        font-size: 35px;
+    }
+
+    .footer-ul li {
+        font-size: 20px;
+    }
+
+    .socia-media-container svg {
+        width: 28px;
+
+    }
+
+}
+
+
+@media screen and (min-width:800px) {
+    .main-heading {
+        font-size: 45px;
+    }
+
+    .description {
+        font-size: 25px;
+        width: 400px;
+    }
+
+    .video-text {
+        font-size: 30px;
+    }
+
+    .first-container {
+        padding: 50px;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .ul-class {
+        justify-content: space-around;
+    }
+
+    .facility-heading {
+        font-size: 45px;
+    }
+
+}
